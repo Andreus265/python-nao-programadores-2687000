@@ -4,32 +4,26 @@
 # 2. Armazene esses dados em um dicionário
 # 3. Imprima na tela uma string com as informações de nome, ano_conheceu_linkedin, total de anos transcurridos, total de cursos realizados e (apenas) o primeiro e último curso.
 
-# 1. Solicitar os dados da estudante
-nome = input("Digite seu nome: ")
-ano_conheceu_linkedin = int(input("Digite o ano que você conheceu o LinkedIn: "))
-ano_atual = int(input("Digite o ano atual: "))
-cursos = input("Digite os cursos realizados no LinkedIn Learning separados por vírgula (em ordem cronológica): ")
+nome = input('digite seu nome:')
+ano_que_conheceu_linkedin = int(input('digite o ano que conheceu o linkedin:'))
+ano_atual = int(input('digite o ano atual:'))
+cursos = input("digite os cursos realizados no LinkedIn Learning separados por virgula em ordem cronológica:")
 
-# Convertendo os cursos para uma lista
 lista_cursos = cursos.split(',')
-
-# 2. Armazenar os dados em um dicionário
 estudante = {
-    'nome': nome,
-    'ano_conheceu_linkedin': ano_conheceu_linkedin,
-    'ano_atual': ano_atual,
-    'cursos': lista_cursos
+  'nome':nome,
+  'ano_que_conheceu_linkedin':ano_que_conheceu_linkedin,
+  'ano_atual':ano_atual,
+  'cursos':cursos,
 }
-
-# 3. Imprimir na tela as informações formatadas
-total_anos_transcorridos = ano_atual - ano_conheceu_linkedin
+total_anos_transcorridos = ano_atual - ano_que_conheceu_linkedin
 primeiro_curso = lista_cursos[0].strip()
 ultimo_curso = lista_cursos[-1].strip()
 total_cursos_realizados = len(lista_cursos)
 
-# Formatando a string com as informações
+
 print(f"Nome: {estudante['nome']}")
-print(f"Ano que conheceu o LinkedIn: {estudante['ano_conheceu_linkedin']}")
+print(f"Ano que conheceu o LinkedIn: {estudante['ano_que_conheceu_linkedin']}")
 print(f"Total de anos transcorridos desde então: {total_anos_transcorridos} anos")
 print(f"Total de cursos realizados: {total_cursos_realizados}")
 print(f"Primeiro curso: {primeiro_curso}")
