@@ -9,3 +9,11 @@
 
 
 # Declare uma variável do tipo booleano
+
+numero = '1'
+verdade = 'True'
+string = '1.2'
+
+print(numero)
+print(verdade)
+print (string)
