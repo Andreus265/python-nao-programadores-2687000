@@ -5,3 +5,13 @@
 
 
 # Insira "else" no while loop anterior.
+
+fase_atual = 1
+fase_final = 4
+
+print('niveis atuais:')
+while fase_atual <= fase_final:
+  print(fase_atual)
+  fase_atual = fase_atual+1
+else:
+  print('parabens você chegou ao nivel final')
