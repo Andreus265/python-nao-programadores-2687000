@@ -5,3 +5,24 @@
 # 4. Crie uma estrutura condicional para verificar se cada variável está contida na lista
 # 5. Se o curso estiver na lista, solicite uma nota para avaliação
 # 6. Armazene essa nota no dicionário, sendo a chave o título do curso e o valor a nota
+
+lista = ['python', 'c++', 'java', 'sql', 'arduino', 'kotlin']
+
+curso1 = 'python'
+curso2 = 'c++'
+curso3 = 'java'
+
+notas_cursos = {}
+
+if curso1 in lista :
+  nota = input('de uma nota para esse curso:')
+  notas_cursos[curso1]= nota
+
+if curso2 in lista :
+  nota = input('de uma nota para esse curso:')
+  notas_cursos[curso2]= nota
+  
+if curso3 in lista :
+  nota = input('de uma nota para esse curso:')
+  notas_cursos[curso3]= nota
+  

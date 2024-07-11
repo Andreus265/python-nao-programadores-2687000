@@ -6,3 +6,14 @@
 # 3.2 Caso o número seja divisível por 5, substitua-o por "Buzz"
 # 3.3 Caso o número seja divisível por 3 e 5, substitua-o por "FizzBuzz"
 
+
+numeros = list(range(1, 16))
+for i in range(len(numeros)):
+    if numeros[i] % 3 == 0 and numeros[i] % 5 == 0:
+        numeros[i] = "FizzBuzz"
+    elif numeros[i] % 3 == 0:
+        numeros[i] = "Fizz"
+    elif numeros[i] % 5 == 0:
+        numeros[i] = "Buzz"
+print("Lista após substituições:")
+print(numeros)
